@@ -15,8 +15,8 @@ const Commento = ({ pageId }) => {
       document.body.removeChild(script);
     };
   }, [pageId]);
-
-  return <div id="commento" />;
+  return <h1>{"Id: "+ pageId}</h1>
+//   return <div id="commento" />;
 };
 
 Commento.propTypes = {

@@ -4,8 +4,7 @@ import Commento from "../components/Commento";
 
 const Product = () => {
   const { id } = useParams();
-  return <h1>{id}</h1>;
-  //   return <Commento pageId={id} />;
+    return <Commento pageId={id} />;
 };
 
 export default Product;
