@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <iframe src="https://zeeda-commento.vercel.app/product/2"></iframe>
     </div>
   );
 };
