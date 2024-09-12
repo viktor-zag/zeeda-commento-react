@@ -11,10 +11,18 @@ button {
   color: #f8f6f1 !important;
 }
 
+button:focus {
+  border-color: #8a9a5b !important;
+}
+
 .commento-card {
   border-left: 2px solid #b2b2a1 !important;
 }
 
 .commento-sort-policy-button-selected {
   color: #8a9a5b !important;
+}
+
+.commento-login-box {
+  background-color: #d2d2c6 !important;
 }
