@@ -5,3 +5,12 @@
 textarea {
   background-color: #d2d2c6 !important;
 }
+
+button {
+  background-color: #8a9a5b;
+  color: #f8f6f1;
+}
+
+.commento-card {
+  border-left: 2px solid #b2b2a1;
+}
