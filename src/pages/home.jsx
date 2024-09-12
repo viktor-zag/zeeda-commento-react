@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const useQuery = () => {
@@ -9,12 +9,39 @@ const Home = () => {
   let query = useQuery();
   const productId = query.get("id");
 
+  const iframeRef = useRef(null);
+
+  const adjustIframeHeight = () => {
+    const iframe = iframeRef.current;
+    if (iframe) {
+      const iframeContent =
+        iframe.contentDocument || iframe.contentWindow.document;
+      if (iframeContent) {
+        iframe.style.height = iframeContent.body.scrollHeight + "px";
+      }
+    }
+  };
+
+  useEffect(() => {
+    const iframe = iframeRef.current;
+    if (iframe) {
+      iframe.onload = adjustIframeHeight;
+    }
+
+    // Clean-up function
+    return () => {
+      if (iframe) {
+        iframe.onload = null;
+      }
+    };
+  }, []);
+
   return (
     <div>
       <iframe
+        ref={iframeRef}
         src={"https://zeeda-commento.vercel.app/product/" + productId}
-        width="100%"
-        height="100%"
+        style={{ width: "100%", border: "none" }}
       ></iframe>
     </div>
   );
