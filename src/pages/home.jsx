@@ -16,11 +16,12 @@ const Home = () => {
     if (iframe) {
       const iframeContent =
         iframe.contentDocument || iframe.contentWindow.document;
+      const rootDiv = iframeContent.getElementById("root");
       if (iframeContent) {
         console.log("iframe");
-        console.log(iframeContent.body);
-        console.log("iframe body height");
-        console.log(iframeContent.body.height);
+        console.log(iframeContent.body.clientHeight);
+        console.log("root");
+        console.log(rootDiv.clientHeight);
         iframe.style.height = iframeContent.body.scrollHeight + "px";
       }
     }
