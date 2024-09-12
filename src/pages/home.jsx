@@ -18,10 +18,6 @@ const Home = () => {
         iframe.contentDocument || iframe.contentWindow.document;
       const rootDiv = iframeContent.getElementById("root");
       if (iframeContent) {
-        console.log("iframe");
-        console.log(iframeContent.body.clientHeight);
-        console.log("root");
-        console.log(rootDiv.clientHeight);
         iframe.style.height = iframeContent.body.scrollHeight + "px";
       }
     }
@@ -46,7 +42,7 @@ const Home = () => {
       <iframe
         ref={iframeRef}
         src={"https://zeeda-commento.vercel.app/product/" + productId}
-        style={{ width: "100%", border: "none" }}
+        style={{ width: "100%", height: "100vh", border: "none" }}
       ></iframe>
     </div>
   );

@@ -10,8 +10,6 @@ const Commento = ({ pageId }) => {
     script.setAttribute("data-no-fonts", "true"); // Optional attribute
 
     document.body.appendChild(script);
-    console.log("height");
-    console.log(document.getElementById("id"));
     return () => {
       document.body.removeChild(script);
     };
