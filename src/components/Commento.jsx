@@ -11,9 +11,9 @@ const Commento = ({ pageId }) => {
 
     document.body.appendChild(script);
     console.log("height");
-    console.log(document.body.offsetHeight);
-    console.log(document.body.clientHeight);
-    console.log(document.body.scrollHeight);
+    console.log(document.getElementById("id").offsetHeight);
+    console.log(document.getElementById("id").clientHeight);
+    console.log(document.getElementById("id").scrollHeight);
     return () => {
       document.body.removeChild(script);
     };
