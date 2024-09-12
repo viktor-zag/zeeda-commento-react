@@ -42,7 +42,7 @@ const Home = () => {
       <iframe
         ref={iframeRef}
         src={"https://zeeda-commento.vercel.app/product/" + productId}
-        style={{ width: "100%", height: "99vh", border: "none" }}
+        style={{ width: "100%", height: "100vh", border: "none" }}
       ></iframe>
     </div>
   );
