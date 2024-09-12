@@ -10,12 +10,11 @@ const Commento = ({ pageId }) => {
     script.setAttribute("data-no-fonts", "true"); // Optional attribute
 
     document.body.appendChild(script);
-
+    console.log("scrollHeight");
+    console.log(document.documentElement.scrollHeight);
     return () => {
       document.body.removeChild(script);
     };
-    console.log("scrollHeight");
-    console.log(document.documentElement.scrollHeight);
   }, [pageId]);
   return <div id="commento" />;
 };
