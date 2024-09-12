@@ -8,9 +8,13 @@ textarea {
 
 button {
   background-color: #8a9a5b !important;
-  color: #f8f6f1 !important; 
+  color: #f8f6f1 !important;
 }
 
 .commento-card {
   border-left: 2px solid #b2b2a1 !important;
+}
+
+.commento-sort-policy-button-selected {
+  color: #8a9a5b !important;
 }
