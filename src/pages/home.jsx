@@ -19,7 +19,8 @@ const Home = () => {
       if (iframeContent) {
         console.log("iframe");
         console.log(iframeContent.body);
-        console.log(iframeContent.body.scrollHeight);
+        console.log("iframe body height");
+        console.log(iframeContent.body.height);
         iframe.style.height = iframeContent.body.scrollHeight + "px";
       }
     }
