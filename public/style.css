@@ -6,14 +6,10 @@ textarea {
   background-color: #d2d2c6 !important;
 }
 
-/* button {
+button {
   background-color: #8a9a5b !important;
   color: #f8f6f1 !important;
 }
-
-button:focus {
-  border-color: #8a9a5b !important;
-} */
 
 .commento-card {
   border-left: 2px solid #b2b2a1 !important;
